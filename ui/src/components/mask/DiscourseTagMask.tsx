@@ -51,7 +51,7 @@ class DiscourseTagMask extends React.PureComponent<Props> {
           if (firstEl.label === "Contribution") {
             return -1;
           } else if (firstEl.label === "Result") {
-            return 1;
+            return -1;
           } else {
             return 0;
           }
