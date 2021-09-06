@@ -890,7 +890,7 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
               handleCloseSnackbar={this.closeSnackbar}
               handleCloseDrawer={this.closeDrawer}
             />
-            <PdfjsToolbar>
+            {/* <PdfjsToolbar>
               <button
                 onClick={this.toggleAnnotationHints}
                 className="toolbarButton hiddenLargeView pdfjs-toolbar__button"
@@ -901,7 +901,7 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
                     : "Show Underlines"}
                 </span>
               </button>
-            </PdfjsToolbar>
+            </PdfjsToolbar> */}
             <PdfjsBrandbar />
             <ViewerOverlay
               pdfViewer={this.state.pdfViewer}
