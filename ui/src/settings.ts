@@ -134,6 +134,11 @@ const PRESETS: Preset[] = [
     symbolUnderlineMethod: "top-level-symbols",
     equationDiagramsEnabled: false,
   },
+  {
+    key: "skim",
+    primerPageEnabled: false,
+    annotationHintsEnabled: false,
+  }
 ];
 
 /**

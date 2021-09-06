@@ -1,24 +1,41 @@
+import classNames from "classnames";
+import React from "react";
 import * as api from "./api/api";
-import AppOverlay from "./components/overlay/AppOverlay";
+import data from "./data/skimmingData.json";
+import {
+  Entity,
+  EntityCreateData,
+  EntityUpdateData,
+  isCitation,
+  isEquation,
+  isSymbol,
+  isTerm,
+  Paper,
+  RhetoricUnit,
+  Symbol,
+} from "./api/types";
 import Control from "./components/control/Control";
-import DefinitionPreview from "./components/preview/DefinitionPreview";
-import { Drawer, DrawerContentType } from "./components/drawer/Drawer";
-import EntityAnnotationLayer from "./components/entity/EntityAnnotationLayer";
 import EntityCreationCanvas from "./components/control/EntityCreationCanvas";
 import EntityCreationToolbar, {
   AreaSelectionMethod,
   createCreateEntityDataWithBoxes,
 } from "./components/control/EntityCreationToolbar";
-import EntityPageMask from "./components/mask/EntityPageMask";
+import MainControlPanel from "./components/control/MainControlPanel";
+import TextSelectionMenu from "./components/control/TextSelectionMenu";
+import { Drawer, DrawerContentType } from "./components/drawer/Drawer";
+import EntityAnnotationLayer from "./components/entity/EntityAnnotationLayer";
 import EquationDiagram from "./components/entity/equation/EquationDiagram";
+import EntityPageMask from "./components/mask/EntityPageMask";
+import SearchPageMask from "./components/mask/SearchPageMask";
+import AppOverlay from "./components/overlay/AppOverlay";
+import PageOverlay from "./components/overlay/PageOverlay";
+import ViewerOverlay from "./components/overlay/ViewerOverlay";
+import PdfjsBrandbar from "./components/pdfjs/PdfjsBrandbar";
+import PdfjsToolbar from "./components/pdfjs/PdfjsToolbar";
+import DefinitionPreview from "./components/preview/DefinitionPreview";
+import PrimerPage from "./components/primer/PrimerPage";
 import FindBar, { FindQuery } from "./components/search/FindBar";
 import logger from "./logging";
-import MainControlPanel from "./components/control/MainControlPanel";
-import PageOverlay from "./components/overlay/PageOverlay";
-import PdfjsToolbar from "./components/pdfjs/PdfjsToolbar";
-import PdfjsBrandbar from "./components/pdfjs/PdfjsBrandbar";
-import PrimerPage from "./components/primer/PrimerPage";
-import SearchPageMask from "./components/mask/SearchPageMask";
 import * as selectors from "./selectors";
 import { matchingSymbols } from "./selectors";
 import {
@@ -36,18 +53,6 @@ import {
   SymbolFilters,
 } from "./state";
 import "./style/index.less";
-import TextSelectionMenu from "./components/control/TextSelectionMenu";
-import {
-  Entity,
-  EntityCreateData,
-  EntityUpdateData,
-  isCitation,
-  isEquation,
-  isSymbol,
-  isTerm,
-  Paper,
-  Symbol,
-} from "./api/types";
 import {
   DocumentLoadedEvent,
   PageRenderedEvent,
@@ -55,10 +60,7 @@ import {
 } from "./types/pdfjs-viewer";
 import * as stateUtils from "./utils/state";
 import * as uiUtils from "./utils/ui";
-import ViewerOverlay from "./components/overlay/ViewerOverlay";
-
-import classNames from "classnames";
-import React from "react";
+import DiscourseTagMask from "./components/mask/DiscourseTagMask";
 
 interface Props {
   paperId?: PaperId;
@@ -119,6 +121,8 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
       entityCreationType: "term",
       propagateEntityEdits: true,
 
+      skimOpacity: 0.5,
+
       ...settings,
     };
   }
@@ -127,42 +131,42 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
     this.setState((prevState) => ({
       controlPanelShowing: !prevState.controlPanelShowing,
     }));
-  }
+  };
 
   toggleAnnotationHints = (): void => {
     this.setState((prevState) => ({
       annotationHintsEnabled: !prevState.annotationHintsEnabled,
     }));
-  }
+  };
 
   setAnnotationHintsEnabled = (enabled: boolean): void => {
     this.setState({ annotationHintsEnabled: enabled });
-  }
+  };
 
   setGlossStyle = (style: GlossStyle): void => {
     this.setState({ glossStyle: style });
-  }
+  };
 
   closeControlPanel = (): void => {
     this.setState({ controlPanelShowing: false });
-  }
+  };
 
   handleChangeSetting = (setting: ConfigurableSetting, value: any): void => {
     this.setState({
       [setting.key]: value,
     } as State);
-  }
+  };
 
   setTextSelection = (selection: Selection | null): void => {
     this.setState({
       textSelection: selection,
       textSelectionChangeMs: Date.now(),
     });
-  }
+  };
 
   selectEntity = (id: string): void => {
     this.selectEntityAnnotation(id);
-  }
+  };
 
   selectEntityAnnotation = (
     entityId: string,
@@ -281,7 +285,7 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
         jumpTarget: null,
       } as State;
     });
-  }
+  };
 
   clearEntitySelection = (): void => {
     logger.log("debug", "clear-entity-selection");
@@ -304,15 +308,17 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
       selectedEntityIds: [],
       jumpTarget: null,
     });
-  }
+  };
 
   setEntityCreationType = (type: KnownEntityType): void => {
     this.setState({ entityCreationType: type });
-  }
+  };
 
-  setEntityCreationAreaSelectionMethod = (method: AreaSelectionMethod): void => {
+  setEntityCreationAreaSelectionMethod = (
+    method: AreaSelectionMethod
+  ): void => {
     this.setState({ entityCreationAreaSelectionMethod: method });
-  }
+  };
 
   createEntity = async (data: EntityCreateData): Promise<string | null> => {
     if (this.props.paperId !== undefined) {
@@ -339,7 +345,7 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
       }
     }
     return null;
-  }
+  };
 
   createParentSymbol = async (childSymbols: Symbol[]): Promise<boolean> => {
     /*
@@ -418,7 +424,7 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
     }
 
     return true;
-  }
+  };
 
   updateEntity = async (
     entity: Entity,
@@ -500,7 +506,7 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
 
     const completeSuccess = entitiesToPatch.length === patchedEntities.length;
     return completeSuccess;
-  }
+  };
 
   deleteEntity = async (id: string): Promise<boolean> => {
     if (this.props.paperId !== undefined) {
@@ -539,7 +545,7 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
       }
     }
     return false;
-  }
+  };
 
   showSnackbarMessage = (message: string): void => {
     this.setState({
@@ -547,7 +553,7 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
       snackbarActivationTimeMs: Date.now(),
       snackbarMessage: message,
     });
-  }
+  };
 
   closeSnackbar = (): void => {
     this.setState({
@@ -555,7 +561,7 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
       snackbarActivationTimeMs: null,
       snackbarMessage: null,
     });
-  }
+  };
 
   openDrawer = (drawerContentType: DrawerContentType): void => {
     logger.log("debug", "request-open-drawer", { drawerContentType });
@@ -563,22 +569,22 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
       drawerMode: "open",
       drawerContentType,
     });
-  }
+  };
 
   closeDrawer = (): void => {
     logger.log("debug", "close-drawer");
     this.setState({ drawerMode: "closed" });
-  }
+  };
 
   setMultiselectEnabled = (enabled: boolean): void => {
     this.setState({ multiselectEnabled: enabled });
-  }
+  };
 
   setPropagateEntityEdits = (propagate: boolean): void => {
     this.setState({
       propagateEntityEdits: propagate,
     });
-  }
+  };
 
   startTextSearch = (): void => {
     logger.log("debug", "start-text-search");
@@ -587,12 +593,12 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
       findActivationTimeMs: Date.now(),
       findMode: "pdfjs-builtin-find",
     });
-  }
+  };
 
   setFindMatchCount = (findMatchCount: number | null): void => {
     logger.log("debug", "find-match-count-updated", { count: findMatchCount });
     this.setState({ findMatchCount });
-  }
+  };
 
   setFindMatchIndex = (findMatchIndex: number | null): void => {
     logger.log("debug", "find-match-index-updated", {
@@ -611,7 +617,7 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
       }
       return { findMatchIndex };
     });
-  }
+  };
 
   setFindQuery = (findQuery: FindQuery): void => {
     this.setState((state) => {
@@ -647,7 +653,7 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
       }
       return { findQuery } as State;
     });
-  }
+  };
 
   closeFindBar = (): void => {
     logger.log("debug", "find-close");
@@ -660,7 +666,7 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
       findMatchIndex: null,
       findMatchedEntities: null,
     });
-  }
+  };
 
   componentDidMount() {
     waitForPDFViewerInitialization().then((application) => {
@@ -677,7 +683,9 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
     this.loadDataFromApi();
   }
 
-  subscribeToPDFViewerStateChanges = (pdfViewerApplication: PDFViewerApplication): void => {
+  subscribeToPDFViewerStateChanges = (
+    pdfViewerApplication: PDFViewerApplication
+  ): void => {
     const { eventBus, pdfDocument, pdfViewer } = pdfViewerApplication;
 
     if (pdfDocument !== null) {
@@ -706,12 +714,18 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
         },
       });
     });
-  }
+  };
 
   loadDataFromApi = async (): Promise<void> => {
-    if (this.props.paperId !== undefined && this.props.paperId.type === "arxiv") {
+    if (
+      this.props.paperId !== undefined &&
+      this.props.paperId.type === "arxiv"
+    ) {
       const loadingStartTime = performance.now();
-      const entities = await api.getDedupedEntities(this.props.paperId.id, true);
+      const entities = await api.getDedupedEntities(
+        this.props.paperId.id,
+        true
+      );
       this.setState({
         entities: stateUtils.createRelationalStoreFromArray(entities, "id"),
       });
@@ -724,18 +738,25 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
 
       if (window.heap) {
         const loadingTimeMS = Math.round(performance.now() - loadingStartTime);
-        window.heap.track("paper-loaded", { loadingTimeMS, numEntities: entities.length, numCitations: citationS2Ids.length });
+        window.heap.track("paper-loaded", {
+          loadingTimeMS,
+          numEntities: entities.length,
+          numCitations: citationS2Ids.length,
+        });
       }
     }
-  }
+  };
 
   cachePaper = (paper: Paper, cb?: () => void): void => {
     const paperMap = new Map(this.state.lazyPapers);
     paperMap.set(paper.s2Id, paper);
-    this.setState({
-      lazyPapers: paperMap,
-    }, cb);
-  }
+    this.setState(
+      {
+        lazyPapers: paperMap,
+      },
+      cb
+    );
+  };
 
   jumpToEntityWithBackMessage = (id: string): void => {
     const success = this.jumpToEntity(id);
@@ -746,7 +767,7 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
       );
       // this._backButtonHintShown = true;
     }
-  }
+  };
 
   jumpToEntity = (id: string): boolean => {
     /*
@@ -800,7 +821,21 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
     });
 
     return true;
-  }
+  };
+
+  getDiscourseToColorMap = () => {
+    return {
+      Highlight: "#F1E7407D",
+      Objective: "#9AC2C57D",
+      Novelty: "#D0B5C97D",
+      Contribution: "#62DECF4D",
+      Method: "#75BCE57D",
+      StudySetup: "#ECCE8E7D",
+      Result: "#F285A07D",
+      Conclusion: "#8616284D",
+      "Future Work": "#EDD96D2D",
+    };
+  };
 
   render() {
     let findMatchEntityId: string | null = null;
@@ -827,6 +862,14 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
         });
       }
       this._jumpedToInitialFocus = true;
+    }
+
+    let paper_data: RhetoricUnit[] = [];
+    if (this.props.paperId !== undefined) {
+      paper_data = Object(data)[this.props.paperId!.id];
+      paper_data = paper_data.filter(
+        (x: RhetoricUnit) => x.is_in_expected_section
+      );
     }
 
     return (
@@ -1118,7 +1161,9 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
                         }
                         termAnnotationsEnabled={this.state.termGlossesEnabled}
                         symbolUnderlineMethod={this.state.symbolUnderlineMethod}
-                        definitionsInSymbolGloss={this.state.definitionsInSymbolGloss}
+                        definitionsInSymbolGloss={
+                          this.state.definitionsInSymbolGloss
+                        }
                         glossStyle={this.state.glossStyle}
                         glossEvaluationEnabled={
                           this.state.glossEvaluationEnabled
@@ -1168,6 +1213,17 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
                           handleShowSnackbarMessage={this.showSnackbarMessage}
                           handleCreateEntity={this.createEntity}
                         />
+                      )}
+
+                    {this.props.paperId !== undefined &&
+                      paper_data.length > 0 && (
+                        <DiscourseTagMask
+                          pageView={pageView}
+                          entities={entities}
+                          data={paper_data}
+                          opacity={this.state.skimOpacity}
+                          discourseToColorMap={this.getDiscourseToColorMap()}
+                        ></DiscourseTagMask>
                       )}
                   </PageOverlay>
                 );
