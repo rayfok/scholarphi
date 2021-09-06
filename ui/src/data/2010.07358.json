@@ -159,10 +159,10 @@
         "page": 3
       }
     ],
-    "section": "2.2 Embodied-agent simulation frameworks",
+    "section": "2 RelatedWork 2.2 Embodied-agent simulation frameworks",
     "prob": null,
     "is_author_statement": true,
-    "is_in_expected_section": false
+    "is_in_expected_section": true
   },
   {
     "text": "On the other hand, training of the embodied-agent policy can be done in a variety of ways that need not rely on a human in the loop; Sec. 3 describes in detail our proposed formulation for computing the policy that does not require a human in the looponly a planner coupled to a simulator that can compute the geodesic distances between locations and track task statealthough future work will consider human-in-the-loop training loop analogously to Refs. ",
@@ -197,10 +197,10 @@
         "page": 3
       }
     ],
-    "section": "2.2 Embodied-agent simulation frameworks",
+    "section": "2 RelatedWork 2.2 Embodied-agent simulation frameworks",
     "prob": null,
     "is_author_statement": true,
-    "is_in_expected_section": false
+    "is_in_expected_section": true
   },
   {
     "text": "Thus, for learning assistive AR policies, rather different demands are placed on the environments used for evaluation",
@@ -214,10 +214,10 @@
         "page": 3
       }
     ],
-    "section": "2.2 Embodied-agent simulation frameworks",
+    "section": "2 RelatedWork 2.2 Embodied-agent simulation frameworks",
     "prob": null,
     "is_author_statement": false,
-    "is_in_expected_section": false
+    "is_in_expected_section": true
   },
   {
     "text": "In contrast to this work, we consider a much broader category of object-rearrangement tasks and consider planners based on a general capacitated vehicle routing problem as described in Sec. 3.2. ",
@@ -238,10 +238,10 @@
         "page": 3
       }
     ],
-    "section": "2.1 AR assistance",
+    "section": "2 RelatedWork 2.1 AR assistance",
     "prob": null,
     "is_author_statement": true,
-    "is_in_expected_section": false
+    "is_in_expected_section": true
   },
   {
     "text": "Regarding the choice of embodied agent, one could adopt a fully multiagent perspective and consider the user and AR system to be independent but cooperating agents with the shared aforementioned objective but with different observation and action spaces. ",
@@ -269,7 +269,7 @@
         "page": 5
       }
     ],
-    "section": "3.1 Embodied AI formulation",
+    "section": "3 AR-AssistanceModel 3.1 Embodied AI formulation",
     "prob": null,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -324,7 +324,7 @@
         "page": 8
       }
     ],
-    "section": "5.2 Study conditions: assistance fidelity and task difficulty",
+    "section": "5 Study setup 5.2 Study conditions: assistance fidelity and task difficulty",
     "prob": null,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -355,7 +355,7 @@
         "page": 8
       }
     ],
-    "section": "5.2 Study conditions: assistance fidelity and task difficulty",
+    "section": "5 Study setup 5.2 Study conditions: assistance fidelity and task difficulty",
     "prob": null,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -386,7 +386,7 @@
         "page": 9
       }
     ],
-    "section": "5.2 Study conditions: assistance fidelity and task difficulty",
+    "section": "5 Study setup 5.2 Study conditions: assistance fidelity and task difficulty",
     "prob": null,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -434,7 +434,7 @@
         "page": 11
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": null,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -465,7 +465,7 @@
         "page": 11
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": null,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -489,7 +489,7 @@
         "page": 11
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": null,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -520,7 +520,7 @@
         "page": 11
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": null,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -544,7 +544,7 @@
         "page": 12
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": null,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -575,7 +575,7 @@
         "page": 12
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": null,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -599,7 +599,7 @@
         "page": 12
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": null,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -664,7 +664,7 @@
         "page": 13
       }
     ],
-    "section": "6.2 Interactions between assistance and task difficulty",
+    "section": "6 User study 6.2 Interactions between assistance and task difficulty",
     "prob": null,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -695,7 +695,7 @@
         "page": 13
       }
     ],
-    "section": "6.2 Interactions between assistance and task difficulty",
+    "section": "6 User study 6.2 Interactions between assistance and task difficulty",
     "prob": null,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -904,7 +904,7 @@
         "page": 5
       }
     ],
-    "section": "3.1 Embodied AI formulation",
+    "section": "3 AR-AssistanceModel 3.1 Embodied AI formulation",
     "prob": null,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -935,7 +935,7 @@
         "page": 5
       }
     ],
-    "section": "3.1 Embodied AI formulation",
+    "section": "3 AR-AssistanceModel 3.1 Embodied AI formulation",
     "prob": null,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -966,7 +966,7 @@
         "page": 5
       }
     ],
-    "section": "3.1 Embodied AI formulation",
+    "section": "3 AR-AssistanceModel 3.1 Embodied AI formulation",
     "prob": null,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -997,7 +997,7 @@
         "page": 5
       }
     ],
-    "section": "3.1 Embodied AI formulation",
+    "section": "3 AR-AssistanceModel 3.1 Embodied AI formulation",
     "prob": null,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -1035,7 +1035,7 @@
         "page": 6
       }
     ],
-    "section": "3.2 Object-rearrangement planner: capacitated vehicle routing problem",
+    "section": "3 AR-AssistanceModel 3.2 Object-rearrangement planner: capacitated vehicle routing problem",
     "prob": null,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -1118,7 +1118,7 @@
         "page": 9
       }
     ],
-    "section": "5.3 Metrics",
+    "section": "5 Study setup 5.3 Metrics",
     "prob": null,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -1142,7 +1142,7 @@
         "page": 9
       }
     ],
-    "section": "5.3 Metrics",
+    "section": "5 Study setup 5.3 Metrics",
     "prob": null,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -1183,7 +1183,7 @@
         "page": 11
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": null,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -1207,7 +1207,7 @@
         "page": 11
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": null,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -1231,7 +1231,7 @@
         "page": 11
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": null,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -1255,7 +1255,7 @@
         "page": 11
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": null,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -1286,7 +1286,7 @@
         "page": 12
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": null,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -1317,7 +1317,7 @@
         "page": 12
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": null,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -1334,7 +1334,7 @@
         "page": 12
       }
     ],
-    "section": "6.2 Interactions between assistance and task difficulty",
+    "section": "6 User study 6.2 Interactions between assistance and task difficulty",
     "prob": null,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -1351,7 +1351,7 @@
         "page": 12
       }
     ],
-    "section": "6.2 Interactions between assistance and task difficulty",
+    "section": "6 User study 6.2 Interactions between assistance and task difficulty",
     "prob": null,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -1375,7 +1375,7 @@
         "page": 13
       }
     ],
-    "section": "6.2 Interactions between assistance and task difficulty",
+    "section": "6 User study 6.2 Interactions between assistance and task difficulty",
     "prob": null,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -1402,6 +1402,466 @@
     "section": "E Statistical analysis",
     "prob": null,
     "is_author_statement": true,
+    "is_in_expected_section": false
+  },
+  {
+    "text": "We find that by following the optimal assistance, users are able to decrease their total distance traveled though this comes at a cost of feeling less in control over their own actions. ",
+    "label": "Result",
+    "bboxes": [
+      {
+        "left": 0.6722973856209151,
+        "top": 0.45252651515151515,
+        "width": 0.14770751633986923,
+        "height": 0.011320707070707092,
+        "page": 2
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.4698219696969697,
+        "width": 0.6999934640522876,
+        "height": 0.011320707070707092,
+        "page": 2
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.48711868686868687,
+        "width": 0.19296241830065364,
+        "height": 0.011320707070707092,
+        "page": 2
+      }
+    ],
+    "section": "1 Introduction",
+    "prob": null,
+    "is_author_statement": true,
+    "is_in_expected_section": true
+  },
+  {
+    "text": "This cost may be one users are willing to pay, however, as we also find that users report preferring the optimal assistance to a system that does not provide them with the optimal solution. ",
+    "label": "Result",
+    "bboxes": [
+      {
+        "left": 0.3158839869281046,
+        "top": 0.48711868686868687,
+        "width": 0.5041160130718954,
+        "height": 0.011320707070707092,
+        "page": 2
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.5044141414141414,
+        "width": 0.5746062091503268,
+        "height": 0.011320707070707092,
+        "page": 2
+      }
+    ],
+    "section": "1 Introduction",
+    "prob": null,
+    "is_author_statement": true,
+    "is_in_expected_section": true
+  },
+  {
+    "text": "Additionally, we find that users are not consistent in their willingness to follow assistance.",
+    "label": "Result",
+    "bboxes": [
+      {
+        "left": 0.697545751633987,
+        "top": 0.5044141414141414,
+        "width": 0.12244607843137234,
+        "height": 0.011320707070707092,
+        "page": 2
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.5217108585858585,
+        "width": 0.4046895424836602,
+        "height": 0.011320707070707092,
+        "page": 2
+      }
+    ],
+    "section": "1 Introduction",
+    "prob": null,
+    "is_author_statement": true,
+    "is_in_expected_section": true
+  },
+  {
+    "text": "Akin to other studies on AR assistance that have shown improved task performance for instance in assembly tasks [41, 46], we show faster task completion times with the use of the proposed AR assistance. ",
+    "label": "Result",
+    "bboxes": [
+      {
+        "left": 0.1881503267973856,
+        "top": 0.6116515151515152,
+        "width": 0.6322320261437909,
+        "height": 0.011320707070707092,
+        "page": 4
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.6289482323232324,
+        "width": 0.5698202614379084,
+        "height": 0.011320707070707092,
+        "page": 4
+      }
+    ],
+    "section": "2 RelatedWork 2.3 Evaluating user response to digital assistance",
+    "prob": null,
+    "is_author_statement": true,
+    "is_in_expected_section": false
+  },
+  {
+    "text": "First, we implement a virtual HUD to mimic the first-person view through an AR device (see Fig. 2(a)); the HUD supports the display of information relevant to the proposed AR assistance, as well as the ability to display world-locked digital objects in the environment. ",
+    "label": "Result",
+    "bboxes": [
+      {
+        "left": 0.6215228758169935,
+        "top": 0.39922853535353536,
+        "width": 0.2584820261437908,
+        "height": 0.011320707070707037,
+        "page": 7
+      },
+      {
+        "left": 0.18000163398692812,
+        "top": 0.4165239898989899,
+        "width": 0.6999967320261437,
+        "height": 0.011320707070707092,
+        "page": 7
+      },
+      {
+        "left": 0.18000163398692812,
+        "top": 0.4338207070707071,
+        "width": 0.6119297385620914,
+        "height": 0.011320707070707092,
+        "page": 7
+      }
+    ],
+    "section": "4 AR simulator and deployment at-scale",
+    "prob": null,
+    "is_author_statement": true,
+    "is_in_expected_section": false
+  },
+  {
+    "text": "Each assistance level is characterized by both a world-locked digital-object component and a text-information component; see Fig. 2. ",
+    "label": "Result",
+    "bboxes": [
+      {
+        "left": 0.3209705882352941,
+        "top": 0.43482954545454544,
+        "width": 0.49902450980392155,
+        "height": 0.011320707070707092,
+        "page": 8
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.45212626262626265,
+        "width": 0.2601944444444445,
+        "height": 0.011320707070707092,
+        "page": 8
+      }
+    ],
+    "section": "5 Study setup 5.2 Study conditions: assistance fidelity and task difficulty",
+    "prob": null,
+    "is_author_statement": false,
+    "is_in_expected_section": false
+  },
+  {
+    "text": "level and end at the floor level (see Fig. 2). ",
+    "label": "Result",
+    "bboxes": [
+      {
+        "left": 0.18000163398692812,
+        "top": 0.36273232323232324,
+        "width": 0.2466797385620915,
+        "height": 0.011320707070707092,
+        "page": 9
+      }
+    ],
+    "section": "5 Study setup 5.2 Study conditions: assistance fidelity and task difficulty",
+    "prob": null,
+    "is_author_statement": false,
+    "is_in_expected_section": false
+  },
+  {
+    "text": "5. We then show the interaction effects between assistance and task difficulty.",
+    "label": "Result",
+    "bboxes": [
+      {
+        "left": 0.6298218954248367,
+        "top": 0.6299861111111111,
+        "width": 0.1901683006535947,
+        "height": 0.011320707070707092,
+        "page": 10
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.6472815656565657,
+        "width": 0.26597385620915037,
+        "height": 0.011320707070707092,
+        "page": 10
+      }
+    ],
+    "section": "",
+    "prob": null,
+    "is_author_statement": true,
+    "is_in_expected_section": false
+  },
+  {
+    "text": "In the case of optimal assistance, we observe that participants are more likely to pick and place items in the optimal order than they are in either the none or object-highlighting assistance conditions as measured by normalized deviations (Fig. 4). ",
+    "label": "Result",
+    "bboxes": [
+      {
+        "left": 0.3169346405228758,
+        "top": 0.45105429292929294,
+        "width": 0.563062091503268,
+        "height": 0.011320707070707092,
+        "page": 11
+      },
+      {
+        "left": 0.18000163398692812,
+        "top": 0.46834974747474745,
+        "width": 0.7003725490196078,
+        "height": 0.011320707070707092,
+        "page": 11
+      },
+      {
+        "left": 0.18000163398692812,
+        "top": 0.48564646464646466,
+        "width": 0.181718954248366,
+        "height": 0.011320707070707092,
+        "page": 11
+      }
+    ],
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
+    "prob": null,
+    "is_author_statement": true,
+    "is_in_expected_section": false
+  },
+  {
+    "text": "Further,in thecaseofoptimalassistance,participantsfollowtheshortest-pathtrajectorybetweenpointsmorecloselythantheydoin either the no assistance or object-highlighting assistance conditions (see IPL in Fig. 5). ",
+    "label": "Result",
+    "bboxes": [
+      {
+        "left": 0.8143415032679738,
+        "top": 0.5029431818181819,
+        "width": 0.06565849673202606,
+        "height": 0.011320707070707092,
+        "page": 11
+      },
+      {
+        "left": 0.18000163398692812,
+        "top": 0.5202386363636363,
+        "width": 0.6999934640522876,
+        "height": 0.011320707070707092,
+        "page": 11
+      },
+      {
+        "left": 0.18000163398692812,
+        "top": 0.5375353535353535,
+        "width": 0.49388562091503263,
+        "height": 0.011320707070707092,
+        "page": 11
+      }
+    ],
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
+    "prob": null,
+    "is_author_statement": false,
+    "is_in_expected_section": false
+  },
+  {
+    "text": "We observe that participants presented with object-highlighting and optimal assistance generated significantly shorter total paths than those generated in the no-assistance case, but the average path length traveled with these two forms of assistance was not substantially different (Fig. 6). ",
+    "label": "Result",
+    "bboxes": [
+      {
+        "left": 0.2384673202614379,
+        "top": 0.6240164141414142,
+        "width": 0.6419150326797385,
+        "height": 0.011320707070707092,
+        "page": 11
+      },
+      {
+        "left": 0.18000163398692812,
+        "top": 0.6413131313131313,
+        "width": 0.6999950980392156,
+        "height": 0.011320707070706981,
+        "page": 11
+      },
+      {
+        "left": 0.18000163398692812,
+        "top": 0.658608585858586,
+        "width": 0.33294607843137247,
+        "height": 0.011320707070706981,
+        "page": 11
+      }
+    ],
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
+    "prob": null,
+    "is_author_statement": true,
+    "is_in_expected_section": false
+  },
+  {
+    "text": "For an in-depth reporting of the statistical analyses, see Sec. ",
+    "label": "Result",
+    "bboxes": [
+      {
+        "left": 0.2931797385620915,
+        "top": 0.4337575757575758,
+        "width": 0.3520637254901961,
+        "height": 0.011320707070707092,
+        "page": 11
+      }
+    ],
+    "section": "6 User study 6.2 Interactions between assistance and task difficulty",
+    "prob": null,
+    "is_author_statement": false,
+    "is_in_expected_section": false
+  },
+  {
+    "text": "Participants provided with no assistance and object-highlighting assistance were neutral about their feelings of needing to follow the assistance; participantsprovidedwithoptimalassistanceratedthattheydidfeeltheneedtofollowtheassistance.Finally,participants provided with no assistance and object-highlighting assistance disagreed that they would prefer to have the system show them what to do next and where to go next. ",
+    "label": "Result",
+    "bboxes": [
+      {
+        "left": 0.6952859477124183,
+        "top": 0.36587247474747475,
+        "width": 0.12471241830065372,
+        "height": 0.011320707070707092,
+        "page": 12
+      },
+      {
+        "left": 0.11945915032679738,
+        "top": 0.38316919191919196,
+        "width": 0.7015735294117647,
+        "height": 0.011320707070706981,
+        "page": 12
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.40046590909090907,
+        "width": 0.6999934640522875,
+        "height": 0.011320707070707092,
+        "page": 12
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.4177613636363637,
+        "width": 0.7005359477124183,
+        "height": 0.011320707070707092,
+        "page": 12
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.4350580808080808,
+        "width": 0.25797875816993465,
+        "height": 0.011320707070707092,
+        "page": 12
+      }
+    ],
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
+    "prob": null,
+    "is_author_statement": false,
+    "is_in_expected_section": false
+  },
+  {
+    "text": "For an in-depth reporting of the statistical analyses, see Sec. ",
+    "label": "Result",
+    "bboxes": [
+      {
+        "left": 0.26713888888888887,
+        "top": 0.7636590909090909,
+        "width": 0.3520637254901961,
+        "height": 0.011320707070707092,
+        "page": 12
+      }
+    ],
+    "section": "6 User study 6.2 Interactions between assistance and task difficulty",
+    "prob": null,
+    "is_author_statement": false,
+    "is_in_expected_section": false
+  },
+  {
+    "text": "We still observe this trend, however,",
+    "label": "Result",
+    "bboxes": [
+      {
+        "left": 0.613485294117647,
+        "top": 0.8155479797979798,
+        "width": 0.20811764705882374,
+        "height": 0.011320707070707092,
+        "page": 12
+      }
+    ],
+    "section": "",
+    "prob": null,
+    "is_author_statement": true,
+    "is_in_expected_section": false
+  },
+  {
+    "text": "If the point was not navigable, rejection sampling was used to find a navigable point within a small radius surroundingthecentroid.Thismethodallowedustoensurethattheparticipantsstartingpositiondidnotbiastheirsolution by their starting location. ",
+    "label": "Result",
+    "bboxes": [
+      {
+        "left": 0.24378267973856207,
+        "top": 0.21383838383838386,
+        "width": 0.6362107843137256,
+        "height": 0.011320707070707037,
+        "page": 17
+      },
+      {
+        "left": 0.18000163398692812,
+        "top": 0.23113383838383839,
+        "width": 0.6999934640522876,
+        "height": 0.011320707070707092,
+        "page": 17
+      },
+      {
+        "left": 0.18000163398692812,
+        "top": 0.24843055555555557,
+        "width": 0.14986437908496728,
+        "height": 0.011320707070707065,
+        "page": 17
+      }
+    ],
+    "section": "C Disorganized house generation",
+    "prob": null,
+    "is_author_statement": false,
+    "is_in_expected_section": false
+  },
+  {
+    "text": "We conducted two individual two-way factorial ANOVA tests to measure the main effects of assistance type and task difficulty on normalized deviations and IPL, and any combined effects of assistance type and difficulty (see Fig. 8). ",
+    "label": "Result",
+    "bboxes": [
+      {
+        "left": 0.11929738562091505,
+        "top": 0.33664141414141413,
+        "width": 0.7010833333333333,
+        "height": 0.011320707070707092,
+        "page": 18
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.35393813131313134,
+        "width": 0.702248366013072,
+        "height": 0.011320707070707092,
+        "page": 18
+      }
+    ],
+    "section": "E Statistical analysis",
+    "prob": null,
+    "is_author_statement": true,
+    "is_in_expected_section": false
+  },
+  {
+    "text": "000), Prefer to show (  ( 2 , 116 ) = 15 . ",
+    "label": "Result",
+    "bboxes": [
+      {
+        "left": 0.3994787581699346,
+        "top": 0.26148358585858583,
+        "width": 0.20470751633986928,
+        "height": 0.013834595959595963,
+        "page": 18
+      }
+    ],
+    "section": "E Statistical analysis",
+    "prob": null,
+    "is_author_statement": false,
     "is_in_expected_section": false
   },
   {
@@ -1675,7 +2135,7 @@
         "page": 3
       }
     ],
-    "section": "2.2 Embodied-agent simulation frameworks",
+    "section": "2 RelatedWork 2.2 Embodied-agent simulation frameworks",
     "prob": 0.5,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -1692,7 +2152,7 @@
         "page": 3
       }
     ],
-    "section": "2.2 Embodied-agent simulation frameworks",
+    "section": "2 RelatedWork 2.2 Embodied-agent simulation frameworks",
     "prob": 0.5,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -1723,7 +2183,7 @@
         "page": 3
       }
     ],
-    "section": "2.1 AR assistance",
+    "section": "2 RelatedWork 2.1 AR assistance",
     "prob": 0.5,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -1754,7 +2214,7 @@
         "page": 3
       }
     ],
-    "section": "2.1 AR assistance",
+    "section": "2 RelatedWork 2.1 AR assistance",
     "prob": 0.5,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -1778,7 +2238,7 @@
         "page": 4
       }
     ],
-    "section": "2.2 Embodied-agent simulation frameworks",
+    "section": "2 RelatedWork 2.2 Embodied-agent simulation frameworks",
     "prob": 0.5,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -1802,7 +2262,7 @@
         "page": 4
       }
     ],
-    "section": "2.3 Evaluating user response to digital assistance",
+    "section": "2 RelatedWork 2.3 Evaluating user response to digital assistance",
     "prob": 0.5,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -1819,7 +2279,7 @@
         "page": 4
       }
     ],
-    "section": "2.3 Evaluating user response to digital assistance",
+    "section": "2 RelatedWork 2.3 Evaluating user response to digital assistance",
     "prob": 0.5,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -1857,7 +2317,7 @@
         "page": 4
       }
     ],
-    "section": "2.3 Evaluating user response to digital assistance",
+    "section": "2 RelatedWork 2.3 Evaluating user response to digital assistance",
     "prob": 0.5,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -1895,7 +2355,7 @@
         "page": 4
       }
     ],
-    "section": "2.2 Embodied-agent simulation frameworks",
+    "section": "2 RelatedWork 2.2 Embodied-agent simulation frameworks",
     "prob": 0.5,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -1926,7 +2386,7 @@
         "page": 5
       }
     ],
-    "section": "3.1 Embodied AI formulation",
+    "section": "3 AR-AssistanceModel 3.1 Embodied AI formulation",
     "prob": 0.5,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -1950,7 +2410,7 @@
         "page": 5
       }
     ],
-    "section": "3.1 Embodied AI formulation",
+    "section": "3 AR-AssistanceModel 3.1 Embodied AI formulation",
     "prob": 0.5,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -1981,7 +2441,7 @@
         "page": 5
       }
     ],
-    "section": "3.1 Embodied AI formulation",
+    "section": "3 AR-AssistanceModel 3.1 Embodied AI formulation",
     "prob": 0.5,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -2012,7 +2472,7 @@
         "page": 5
       }
     ],
-    "section": "3.1 Embodied AI formulation",
+    "section": "3 AR-AssistanceModel 3.1 Embodied AI formulation",
     "prob": 0.5,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -2036,7 +2496,7 @@
         "page": 5
       }
     ],
-    "section": "3.1 Embodied AI formulation",
+    "section": "3 AR-AssistanceModel 3.1 Embodied AI formulation",
     "prob": 0.5,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -2060,7 +2520,7 @@
         "page": 5
       }
     ],
-    "section": "3.1 Embodied AI formulation",
+    "section": "3 AR-AssistanceModel 3.1 Embodied AI formulation",
     "prob": 0.5,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -2201,7 +2661,7 @@
         "page": 7
       }
     ],
-    "section": "5.1 House-cleaning task",
+    "section": "5 Study setup 5.1 House-cleaning task",
     "prob": 0.5,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -2225,7 +2685,7 @@
         "page": 8
       }
     ],
-    "section": "5.2 Study conditions: assistance fidelity and task difficulty",
+    "section": "5 Study setup 5.2 Study conditions: assistance fidelity and task difficulty",
     "prob": 0.5,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -2284,7 +2744,7 @@
         "page": 9
       }
     ],
-    "section": "5.3 Metrics",
+    "section": "5 Study setup 5.3 Metrics",
     "prob": 0.5,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -2308,7 +2768,7 @@
         "page": 9
       }
     ],
-    "section": "5.2 Study conditions: assistance fidelity and task difficulty",
+    "section": "5 Study setup 5.2 Study conditions: assistance fidelity and task difficulty",
     "prob": 0.5,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -2339,7 +2799,7 @@
         "page": 11
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": 0.5,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -2363,7 +2823,7 @@
         "page": 11
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": 0.5,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -2387,7 +2847,7 @@
         "page": 11
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": 0.5,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -2411,7 +2871,7 @@
         "page": 11
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": 0.5,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -2442,7 +2902,7 @@
         "page": 11
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": 0.5,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -2466,7 +2926,7 @@
         "page": 11
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": 0.5,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -2490,7 +2950,7 @@
         "page": 11
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": 0.5,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -2514,7 +2974,7 @@
         "page": 11
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": 1,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -2538,7 +2998,7 @@
         "page": 12
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": 0.5,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -2569,7 +3029,7 @@
         "page": 12
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": 0.5,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -2600,7 +3060,7 @@
         "page": 12
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": 0.5,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -2617,7 +3077,7 @@
         "page": 12
       }
     ],
-    "section": "6.2 Interactions between assistance and task difficulty",
+    "section": "6 User study 6.2 Interactions between assistance and task difficulty",
     "prob": 1,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -2765,7 +3225,7 @@
         "page": 13
       }
     ],
-    "section": "6.2 Interactions between assistance and task difficulty",
+    "section": "6 User study 6.2 Interactions between assistance and task difficulty",
     "prob": 0.5,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -2789,7 +3249,7 @@
         "page": 13
       }
     ],
-    "section": "6.2 Interactions between assistance and task difficulty",
+    "section": "6 User study 6.2 Interactions between assistance and task difficulty",
     "prob": 0.5,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -2813,7 +3273,7 @@
         "page": 13
       }
     ],
-    "section": "6.2 Interactions between assistance and task difficulty",
+    "section": "6 User study 6.2 Interactions between assistance and task difficulty",
     "prob": 0.5,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -2837,7 +3297,7 @@
         "page": 13
       }
     ],
-    "section": "6.2 Interactions between assistance and task difficulty",
+    "section": "6 User study 6.2 Interactions between assistance and task difficulty",
     "prob": 0.5,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -2919,7 +3379,7 @@
     "section": "1 Introduction",
     "prob": null,
     "is_author_statement": false,
-    "is_in_expected_section": false
+    "is_in_expected_section": true
   },
   {
     "text": "Finally, how real users will respond to AR assistance in everyday tasksin particular, how it affects their task performance, effort, and sense of agencyremains an open question [2, 8].",
@@ -2943,7 +3403,7 @@
     "section": "1 Introduction",
     "prob": null,
     "is_author_statement": false,
-    "is_in_expected_section": false
+    "is_in_expected_section": true
   },
   {
     "text": "Future work will entail developing and assessing perception-based learned policies that assume lower fidelity of the embodied agents observations and considering multi-agent formulations that incorporate models of the users behavior.",
@@ -2974,7 +3434,7 @@
     "section": "1 Introduction",
     "prob": null,
     "is_author_statement": false,
-    "is_in_expected_section": false
+    "is_in_expected_section": true
   },
   {
     "text": "On the other hand, training of the embodied-agent policy can be done in a variety of ways that need not rely on a human in the loop; Sec. 3 describes in detail our proposed formulation for computing the policy that does not require a human in the looponly a planner coupled to a simulator that can compute the geodesic distances between locations and track task statealthough future work will consider human-in-the-loop training loop analogously to Refs. ",
@@ -3009,7 +3469,7 @@
         "page": 3
       }
     ],
-    "section": "2.2 Embodied-agent simulation frameworks",
+    "section": "2 RelatedWork 2.2 Embodied-agent simulation frameworks",
     "prob": null,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -3040,7 +3500,7 @@
         "page": 3
       }
     ],
-    "section": "2.1 AR assistance",
+    "section": "2 RelatedWork 2.1 AR assistance",
     "prob": null,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -3057,7 +3517,7 @@
         "page": 4
       }
     ],
-    "section": "2.3 Evaluating user response to digital assistance",
+    "section": "2 RelatedWork 2.3 Evaluating user response to digital assistance",
     "prob": null,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -3081,7 +3541,7 @@
         "page": 4
       }
     ],
-    "section": "2.3 Evaluating user response to digital assistance",
+    "section": "2 RelatedWork 2.3 Evaluating user response to digital assistance",
     "prob": null,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -3112,7 +3572,7 @@
         "page": 5
       }
     ],
-    "section": "3.1 Embodied AI formulation",
+    "section": "3 AR-AssistanceModel 3.1 Embodied AI formulation",
     "prob": null,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -3136,7 +3596,7 @@
         "page": 5
       }
     ],
-    "section": "3.1 Embodied AI formulation",
+    "section": "3 AR-AssistanceModel 3.1 Embodied AI formulation",
     "prob": null,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -3167,7 +3627,7 @@
         "page": 5
       }
     ],
-    "section": "3.1 Embodied AI formulation",
+    "section": "3 AR-AssistanceModel 3.1 Embodied AI formulation",
     "prob": null,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -3215,7 +3675,7 @@
         "page": 8
       }
     ],
-    "section": "5.2 Study conditions: assistance fidelity and task difficulty",
+    "section": "5 Study setup 5.2 Study conditions: assistance fidelity and task difficulty",
     "prob": null,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -3246,7 +3706,7 @@
         "page": 11
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": null,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -3270,7 +3730,7 @@
         "page": 11
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": null,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -3301,7 +3761,7 @@
         "page": 11
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": null,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -3325,7 +3785,7 @@
         "page": 11
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": null,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -3356,7 +3816,7 @@
         "page": 12
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": null,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -3387,7 +3847,7 @@
         "page": 12
       }
     ],
-    "section": "6.1 Effects of varying assistance fidelity",
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": null,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -3404,7 +3864,7 @@
         "page": 12
       }
     ],
-    "section": "6.2 Interactions between assistance and task difficulty",
+    "section": "6 User study 6.2 Interactions between assistance and task difficulty",
     "prob": null,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -3452,7 +3912,7 @@
         "page": 13
       }
     ],
-    "section": "6.2 Interactions between assistance and task difficulty",
+    "section": "6 User study 6.2 Interactions between assistance and task difficulty",
     "prob": null,
     "is_author_statement": false,
     "is_in_expected_section": false
@@ -3473,5 +3933,421 @@
     "prob": null,
     "is_author_statement": false,
     "is_in_expected_section": false
+  },
+  {
+    "text": "Participants provided with no assistance and object-highlighting assistance were neutral about their feelings of needing to follow the assistance; participantsprovidedwithoptimalassistanceratedthattheydidfeeltheneedtofollowtheassistance.Finally,participants provided with no assistance and object-highlighting assistance disagreed that they would prefer to have the system show them what to do next and where to go next. ",
+    "label": "Result",
+    "bboxes": [
+      {
+        "left": 0.6952859477124183,
+        "top": 0.36587247474747475,
+        "width": 0.12471241830065372,
+        "height": 0.011320707070707092,
+        "page": 12
+      },
+      {
+        "left": 0.11945915032679738,
+        "top": 0.38316919191919196,
+        "width": 0.7015735294117647,
+        "height": 0.011320707070706981,
+        "page": 12
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.40046590909090907,
+        "width": 0.6999934640522875,
+        "height": 0.011320707070707092,
+        "page": 12
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.4177613636363637,
+        "width": 0.7005359477124183,
+        "height": 0.011320707070707092,
+        "page": 12
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.4350580808080808,
+        "width": 0.25797875816993465,
+        "height": 0.011320707070707092,
+        "page": 12
+      }
+    ],
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
+    "prob": 0.8400449156761169,
+    "is_author_statement": false,
+    "is_in_expected_section": false
+  },
+  {
+    "text": "Taken together, these two findings support our hypothesis H1 that participants will follow optimal assistance when presented with it.",
+    "label": "Result",
+    "bboxes": [
+      {
+        "left": 0.7913300653594771,
+        "top": 0.5548320707070707,
+        "width": 0.09028267973856208,
+        "height": 0.011320707070706981,
+        "page": 11
+      },
+      {
+        "left": 0.18000163398692812,
+        "top": 0.5721275252525253,
+        "width": 0.6910424836601305,
+        "height": 0.011320707070707092,
+        "page": 11
+      }
+    ],
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
+    "prob": 0.8118849396705627,
+    "is_author_statement": true,
+    "is_in_expected_section": false
+  },
+  {
+    "text": "We found that participants generally felt that they were faster with assistance than without assistance. ",
+    "label": "Result",
+    "bboxes": [
+      {
+        "left": 0.26437091503267973,
+        "top": 0.5561313131313131,
+        "width": 0.5556323529411764,
+        "height": 0.011320707070707092,
+        "page": 12
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.5734280303030302,
+        "width": 0.061710784313725495,
+        "height": 0.011320707070707092,
+        "page": 12
+      }
+    ],
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
+    "prob": 0.807593584060669,
+    "is_author_statement": true,
+    "is_in_expected_section": false
+  },
+  {
+    "text": "6.1.2 Results summary We now present results for the varying-assistance-fidelity study in terms of both objective and subjective metrics. ",
+    "label": "Result",
+    "bboxes": [
+      {
+        "left": 0.18000163398692812,
+        "top": 0.41646212121212123,
+        "width": 0.6999983660130717,
+        "height": 0.011366161616161552,
+        "page": 11
+      },
+      {
+        "left": 0.18000163398692812,
+        "top": 0.4337575757575758,
+        "width": 0.11024836601307189,
+        "height": 0.011320707070707092,
+        "page": 11
+      }
+    ],
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
+    "prob": 0.7976154685020447,
+    "is_author_statement": true,
+    "is_in_expected_section": false
+  },
+  {
+    "text": "Additionally, we find that users are not consistent in their willingness to follow assistance.",
+    "label": "Result",
+    "bboxes": [
+      {
+        "left": 0.697545751633987,
+        "top": 0.5044141414141414,
+        "width": 0.12244607843137234,
+        "height": 0.011320707070707092,
+        "page": 2
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.5217108585858585,
+        "width": 0.4046895424836602,
+        "height": 0.011320707070707092,
+        "page": 2
+      }
+    ],
+    "section": "1 Introduction",
+    "prob": 0.7861399054527283,
+    "is_author_statement": true,
+    "is_in_expected_section": true
+  },
+  {
+    "text": "Instead, our proposed approach for AR assistance applicable to complex object-rearrangement tasks described in Sec. 3 leverages only the sensor measurements of the AR device, and executes a policy whose state is informed only by these sensor measurements, thus enabling up-to-date assistance toward optimal task completion. ",
+    "label": "Method",
+    "bboxes": [
+      {
+        "left": 0.196281045751634,
+        "top": 0.3314520202020202,
+        "width": 0.6837173202614378,
+        "height": 0.011320707070707092,
+        "page": 3
+      },
+      {
+        "left": 0.18000163398692812,
+        "top": 0.3487487373737374,
+        "width": 0.7003807189542482,
+        "height": 0.011320707070707092,
+        "page": 3
+      },
+      {
+        "left": 0.18000163398692812,
+        "top": 0.3660441919191919,
+        "width": 0.5646748366013072,
+        "height": 0.011320707070707092,
+        "page": 3
+      }
+    ],
+    "section": "2 RelatedWork 2.1 AR assistance",
+    "prob": 0.6577819585800171,
+    "is_author_statement": true,
+    "is_in_expected_section": false
+  },
+  {
+    "text": "First, we implement a virtual HUD to mimic the first-person view through an AR device (see Fig. 2(a)); the HUD supports the display of information relevant to the proposed AR assistance, as well as the ability to display world-locked digital objects in the environment. ",
+    "label": "Method",
+    "bboxes": [
+      {
+        "left": 0.6215228758169935,
+        "top": 0.39922853535353536,
+        "width": 0.2584820261437908,
+        "height": 0.011320707070707037,
+        "page": 7
+      },
+      {
+        "left": 0.18000163398692812,
+        "top": 0.4165239898989899,
+        "width": 0.6999967320261437,
+        "height": 0.011320707070707092,
+        "page": 7
+      },
+      {
+        "left": 0.18000163398692812,
+        "top": 0.4338207070707071,
+        "width": 0.6119297385620914,
+        "height": 0.011320707070707092,
+        "page": 7
+      }
+    ],
+    "section": "4 AR simulator and deployment at-scale",
+    "prob": 0.5866866111755371,
+    "is_author_statement": true,
+    "is_in_expected_section": false
+  },
+  {
+    "text": "We then used the first N points from this list to define the object locations in the scene. ",
+    "label": "Method",
+    "bboxes": [
+      {
+        "left": 0.5123333333333333,
+        "top": 0.7101919191919192,
+        "width": 0.30766176470588236,
+        "height": 0.011320707070707092,
+        "page": 16
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.7274886363636365,
+        "width": 0.19380555555555556,
+        "height": 0.011320707070706981,
+        "page": 16
+      }
+    ],
+    "section": "C Disorganized house generation",
+    "prob": 0.5790963768959045,
+    "is_author_statement": true,
+    "is_in_expected_section": false
+  },
+  {
+    "text": "To address the third challenge, we define house cleaning as a specific object-rearrangement task, implement the task and the proposed CVRP-based assistance using OR-Tools [19] in the proposed AR simulator, and evaluate it at scale using AMT. ",
+    "label": "Method",
+    "bboxes": [
+      {
+        "left": 0.1362794117647059,
+        "top": 0.4006376262626263,
+        "width": 0.6841013071895424,
+        "height": 0.011320707070707092,
+        "page": 2
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.4179330808080808,
+        "width": 0.7000032679738563,
+        "height": 0.011320707070707092,
+        "page": 2
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.435229797979798,
+        "width": 0.07025980392156862,
+        "height": 0.011320707070707092,
+        "page": 2
+      }
+    ],
+    "section": "1 Introduction",
+    "prob": 0.575564980506897,
+    "is_author_statement": true,
+    "is_in_expected_section": false
+  },
+  {
+    "text": "Weintroduceadeliveryoperator  : P D thatmapseachpickuplocationtoitscorresponding dropofflocation.Weassociateanysolutiontotheproblemwithaninvertibleoperator  : { 0 ,..., 2  }{ 0 ,..., 2  } thatmapsthe step number to location index; note that invertibility of this operator assumes that each location is visited exactly once and a location visit is associated with the pickup or dropoff of the appropriate object. ",
+    "label": "Method",
+    "bboxes": [
+      {
+        "left": 0.1200016339869281,
+        "top": 0.13867929292929293,
+        "width": 0.6999918300653596,
+        "height": 0.013834595959595963,
+        "page": 6
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.15597601010101012,
+        "width": 0.7000016339869282,
+        "height": 0.013834595959595963,
+        "page": 6
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.17578661616161617,
+        "width": 0.6999934640522876,
+        "height": 0.011320707070707037,
+        "page": 6
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.1930820707070707,
+        "width": 0.4647385620915033,
+        "height": 0.011320707070707092,
+        "page": 6
+      }
+    ],
+    "section": "3 AR-AssistanceModel 3.2 Object-rearrangement planner: capacitated vehicle routing problem",
+    "prob": 0.5524724721908569,
+    "is_author_statement": false,
+    "is_in_expected_section": false
+  },
+  {
+    "text": "The goal of our AR assistance model is to formalize the problem of computing and displaying AR assistance for objectrearrangement tasks. ",
+    "label": "Objective",
+    "bboxes": [
+      {
+        "left": 0.11956209150326796,
+        "top": 0.7431035353535353,
+        "width": 0.7029101307189543,
+        "height": 0.011320707070707092,
+        "page": 4
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.7603989898989899,
+        "width": 0.12791993464052293,
+        "height": 0.011320707070707092,
+        "page": 4
+      }
+    ],
+    "section": "3 AR-AssistanceModel",
+    "prob": 0.9147471189498901,
+    "is_author_statement": true,
+    "is_in_expected_section": false
+  },
+  {
+    "text": "In this work, our goal is to develop a framework for such AR assistance applicable to an important class of everyday tasksthose involving object rearrangementand to evaluate its value to users at scale.",
+    "label": "Objective",
+    "bboxes": [
+      {
+        "left": 0.3765686274509804,
+        "top": 0.5384772727272727,
+        "width": 0.5034313725490195,
+        "height": 0.011320707070707092,
+        "page": 1
+      },
+      {
+        "left": 0.18000163398692812,
+        "top": 0.5557739898989899,
+        "width": 0.699642156862745,
+        "height": 0.011320707070707092,
+        "page": 1
+      }
+    ],
+    "section": "1 Introduction",
+    "prob": 0.8989026546478271,
+    "is_author_statement": true,
+    "is_in_expected_section": true
+  },
+  {
+    "text": "The overarching goal of our study is to evaluate how users respond to the AR assistance generated by the proposed framework on a specific quotidian object-rearrangement taskhouse cleaningusing our proposed AR simulator. ",
+    "label": "Objective",
+    "bboxes": [
+      {
+        "left": 0.17956209150326796,
+        "top": 0.6517537878787878,
+        "width": 0.7004395424836602,
+        "height": 0.011320707070707092,
+        "page": 7
+      },
+      {
+        "left": 0.18000163398692812,
+        "top": 0.6690492424242424,
+        "width": 0.6758807189542483,
+        "height": 0.011320707070707092,
+        "page": 7
+      }
+    ],
+    "section": "5 Study setup",
+    "prob": 0.7742143869400024,
+    "is_author_statement": true,
+    "is_in_expected_section": false
+  },
+  {
+    "text": "To address the second challenge, we propose a novel AR simulator that can enable large-scale web-based evaluation of AR assistance and associated data collection. ",
+    "label": "Objective",
+    "bboxes": [
+      {
+        "left": 0.1362794117647059,
+        "top": 0.2795631313131313,
+        "width": 0.6837156862745097,
+        "height": 0.011320707070707092,
+        "page": 2
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.2968598484848485,
+        "width": 0.28593790849673206,
+        "height": 0.011320707070707092,
+        "page": 2
+      }
+    ],
+    "section": "1 Introduction",
+    "prob": 0.6715630292892456,
+    "is_author_statement": true,
+    "is_in_expected_section": true
+  },
+  {
+    "text": "We collect user data across a range of task difficulties and types of AR assistance in order to evaluate how the proposed form of AR assistance affects users task performance, effort, and sense of agency. ",
+    "label": "Objective",
+    "bboxes": [
+      {
+        "left": 0.19319281045751632,
+        "top": 0.435229797979798,
+        "width": 0.6273447712418301,
+        "height": 0.011320707070707092,
+        "page": 2
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.45252651515151515,
+        "width": 0.5493496732026143,
+        "height": 0.011320707070707092,
+        "page": 2
+      }
+    ],
+    "section": "1 Introduction",
+    "prob": 0.5177943706512451,
+    "is_author_statement": true,
+    "is_in_expected_section": true
   }
 ]
