@@ -868,7 +868,7 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
     if (this.props.paperId !== undefined) {
       paper_data = Object(data)[this.props.paperId!.id];
       paper_data = paper_data.filter(
-        (x: RhetoricUnit) => x.is_in_expected_section
+        (x: RhetoricUnit) => x.label === "Method" || x.is_in_expected_section
       );
     }
 
