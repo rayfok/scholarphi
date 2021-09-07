@@ -1,8 +1,8 @@
 import classNames from "classnames";
 import React from "react";
 import * as api from "./api/api";
-import data from "./data/skimmingData.json";
 import {
+  DiscourseObj,
   Entity,
   EntityCreateData,
   EntityUpdateData,
@@ -12,29 +12,31 @@ import {
   isTerm,
   Paper,
   RhetoricUnit,
-  Symbol,
+  Symbol
 } from "./api/types";
 import Control from "./components/control/Control";
 import EntityCreationCanvas from "./components/control/EntityCreationCanvas";
 import EntityCreationToolbar, {
   AreaSelectionMethod,
-  createCreateEntityDataWithBoxes,
+  createCreateEntityDataWithBoxes
 } from "./components/control/EntityCreationToolbar";
 import MainControlPanel from "./components/control/MainControlPanel";
 import TextSelectionMenu from "./components/control/TextSelectionMenu";
 import { Drawer, DrawerContentType } from "./components/drawer/Drawer";
 import EntityAnnotationLayer from "./components/entity/EntityAnnotationLayer";
 import EquationDiagram from "./components/entity/equation/EquationDiagram";
+import DiscourseTagMask from "./components/mask/DiscourseTagMask";
 import EntityPageMask from "./components/mask/EntityPageMask";
 import SearchPageMask from "./components/mask/SearchPageMask";
 import AppOverlay from "./components/overlay/AppOverlay";
 import PageOverlay from "./components/overlay/PageOverlay";
 import ViewerOverlay from "./components/overlay/ViewerOverlay";
 import PdfjsBrandbar from "./components/pdfjs/PdfjsBrandbar";
-import PdfjsToolbar from "./components/pdfjs/PdfjsToolbar";
 import DefinitionPreview from "./components/preview/DefinitionPreview";
 import PrimerPage from "./components/primer/PrimerPage";
+import ScrollbarMarkup from "./components/scrollbar/ScrollbarMarkup";
 import FindBar, { FindQuery } from "./components/search/FindBar";
+import data from "./data/skimmingData.json";
 import logger from "./logging";
 import * as selectors from "./selectors";
 import { matchingSymbols } from "./selectors";
@@ -42,7 +44,7 @@ import {
   ConfigurableSetting,
   CONFIGURABLE_SETTINGS,
   getSettings,
-  GlossStyle,
+  GlossStyle
 } from "./settings";
 import {
   Entities,
@@ -50,17 +52,16 @@ import {
   Pages,
   PaperId,
   State,
-  SymbolFilters,
+  SymbolFilters
 } from "./state";
 import "./style/index.less";
 import {
   DocumentLoadedEvent,
   PageRenderedEvent,
-  PDFViewerApplication,
+  PDFViewerApplication
 } from "./types/pdfjs-viewer";
 import * as stateUtils from "./utils/state";
 import * as uiUtils from "./utils/ui";
-import DiscourseTagMask from "./components/mask/DiscourseTagMask";
 
 interface Props {
   paperId?: PaperId;
@@ -837,6 +838,44 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
     };
   };
 
+  makeDiscourseObjects = (data: RhetoricUnit[]) => {
+    const discourseToColorMap: {
+      [label: string]: string;
+    } = this.getDiscourseToColorMap();
+    let discourseObjs = data.map((r: RhetoricUnit, index) => ({
+      id: index.toString(),
+      entity: r,
+      label: r.label,
+      bboxes: r.bboxes,
+      tagLocation: r.bboxes[0],
+      color: discourseToColorMap[r.label],
+    }));
+
+    // If a sentence has multiple labels, define a prioritization so that each sentence has a unqiue label
+    const text_to_labels: { [text: string]: DiscourseObj[] } = {};
+    discourseObjs.forEach((x: DiscourseObj) => {
+      if (!text_to_labels.hasOwnProperty(x.entity.text)) {
+        text_to_labels[x.entity.text] = [];
+      }
+      text_to_labels[x.entity.text].push(x);
+    });
+    discourseObjs = Object.values(text_to_labels)
+      .map((labels) => {
+        const sortedLabels = labels.sort((firstEl, secondEl) => {
+          if (firstEl.label === "Contribution") {
+            return -1;
+          } else if (firstEl.label === "Result") {
+            return -1;
+          } else {
+            return 0;
+          }
+        });
+        return sortedLabels;
+      })
+      .map((x: DiscourseObj[]) => x[0]);
+    return discourseObjs;
+  };
+
   render() {
     let findMatchEntityId: string | null = null;
     if (
@@ -864,12 +903,14 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
       this._jumpedToInitialFocus = true;
     }
 
-    let paper_data: RhetoricUnit[] = [];
+    let paperData: RhetoricUnit[] = [];
+    let discourseObjs: DiscourseObj[] = [];
     if (this.props.paperId !== undefined) {
-      paper_data = Object(data)[this.props.paperId!.id];
-      paper_data = paper_data.filter(
+      paperData = Object(data)[this.props.paperId!.id];
+      paperData = paperData.filter(
         (x: RhetoricUnit) => x.label === "Method" || x.is_in_expected_section
       );
+      discourseObjs = this.makeDiscourseObjects(paperData);
     }
 
     return (
@@ -1018,6 +1059,16 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
                   selectedEntityIds={this.state.selectedEntityIds}
                 />
               ) : null}
+              {this.state.pdfViewerApplication &&
+                this.state.pages !== null &&
+                discourseObjs.length > 0 && (
+                  <ScrollbarMarkup
+                    numPages={
+                      this.state.pdfViewerApplication?.pdfDocument?.numPages
+                    }
+                    discourseObjs={discourseObjs}
+                  ></ScrollbarMarkup>
+                )}
             </ViewerOverlay>
           </>
         ) : null}
@@ -1216,13 +1267,11 @@ export default class ScholarReader extends React.PureComponent<Props, State> {
                       )}
 
                     {this.props.paperId !== undefined &&
-                      paper_data.length > 0 && (
+                      discourseObjs.length > 0 && (
                         <DiscourseTagMask
                           pageView={pageView}
-                          entities={entities}
-                          data={paper_data}
+                          discourseObjs={discourseObjs}
                           opacity={this.state.skimOpacity}
-                          discourseToColorMap={this.getDiscourseToColorMap()}
                         ></DiscourseTagMask>
                       )}
                   </PageOverlay>
