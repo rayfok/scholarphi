@@ -997,6 +997,44 @@
       "is_in_expected_section": false
     },
     {
+      "text": "For our purposes we filtered out only those dialogs where more than a half of utterances have non-neutral emotional labels, resulting in 78 emotionally positive dialogs and 14 emotionally negative dialogs. ",
+      "label": "Objective",
+      "bboxes": [
+        {
+          "left": 0.22616993464052287,
+          "top": 0.4146010101010101,
+          "width": 0.25471078431372546,
+          "height": 0.012578282828282883,
+          "page": 6
+        },
+        {
+          "left": 0.08790522875816993,
+          "top": 0.4296957070707071,
+          "width": 0.3925604575163399,
+          "height": 0.012578282828282827,
+          "page": 6
+        },
+        {
+          "left": 0.08790522875816993,
+          "top": 0.44479040404040404,
+          "width": 0.3929754901960784,
+          "height": 0.012578282828282827,
+          "page": 6
+        },
+        {
+          "left": 0.08790522875816993,
+          "top": 0.459885101010101,
+          "width": 0.36512908496732027,
+          "height": 0.012578282828282827,
+          "page": 6
+        }
+      ],
+      "section": "4.3.1 Human evaluation setup",
+      "prob": null,
+      "is_author_statement": true,
+      "is_in_expected_section": false
+    },
+    {
       "text": "On the contrary, HRAN poses a question in reply, contradicting the dialog history.",
       "label": "Objective",
       "bboxes": [
@@ -3330,6 +3368,51 @@
   ],
   "2010.07358": [
     {
+      "text": "In summary, our contributions are: (1) a novel framework for computing and displaying AR assistance for objectrearrangement tasks that employs a hybrid single agent (i.e., the userAR-system) and CVRP formulation, (2) a novel AR simulator that can enable large-scale web-based evaluation of AR-like assistance, and (3) a large-scale web-based study that assesses how users respond to the proposed form of AR assistance in a house-cleaning task over a range of task difficulties. ",
+      "label": "Contribution",
+      "bboxes": [
+        {
+          "left": 0.1362794117647059,
+          "top": 0.5390075757575757,
+          "width": 0.6861993464052287,
+          "height": 0.011320707070707092,
+          "page": 2
+        },
+        {
+          "left": 0.1200016339869281,
+          "top": 0.5563030303030303,
+          "width": 0.6999967320261438,
+          "height": 0.011320707070707092,
+          "page": 2
+        },
+        {
+          "left": 0.11948856209150326,
+          "top": 0.5735997474747475,
+          "width": 0.7005147058823529,
+          "height": 0.011320707070707092,
+          "page": 2
+        },
+        {
+          "left": 0.1200016339869281,
+          "top": 0.5908964646464646,
+          "width": 0.7003807189542484,
+          "height": 0.011320707070707092,
+          "page": 2
+        },
+        {
+          "left": 0.1200016339869281,
+          "top": 0.6081919191919192,
+          "width": 0.06494444444444443,
+          "height": 0.011320707070707092,
+          "page": 2
+        }
+      ],
+      "section": "1 Introduction",
+      "prob": null,
+      "is_author_statement": true,
+      "is_in_expected_section": true
+    },
+    {
       "text": "We envision our second contribution as being useful beyond the domain of AR assistance, as it can provide a framework for at-scale user-in-the-loop evaluation of different kinds of digital assistance. ",
       "label": "Contribution",
       "bboxes": [
@@ -3359,6 +3442,23 @@
       "prob": null,
       "is_author_statement": true,
       "is_in_expected_section": true
+    },
+    {
+      "text": "We now review related work that relates to our three key contributions. ",
+      "label": "Contribution",
+      "bboxes": [
+        {
+          "left": 0.11929738562091505,
+          "top": 0.7223472222222223,
+          "width": 0.41027941176470584,
+          "height": 0.011320707070707092,
+          "page": 2
+        }
+      ],
+      "section": "2 RelatedWork",
+      "prob": null,
+      "is_author_statement": true,
+      "is_in_expected_section": false
     },
     {
       "text": "However, AR devices hold the promise of providing assistance to users on a much broader and less specialized class of commonly occurring quotidian activities. ",
@@ -4161,6 +4261,30 @@
       "is_in_expected_section": true
     },
     {
+      "text": "This exposes the exciting potential for such AR devices to provide users with continual, contextually relevant assistance toward achieving their personalized goals. ",
+      "label": "Objective",
+      "bboxes": [
+        {
+          "left": 0.2626388888888889,
+          "top": 0.40010732323232323,
+          "width": 0.6177401960784314,
+          "height": 0.011320707070707092,
+          "page": 1
+        },
+        {
+          "left": 0.18000163398692812,
+          "top": 0.4174027777777778,
+          "width": 0.3623725490196078,
+          "height": 0.011320707070706981,
+          "page": 1
+        }
+      ],
+      "section": "1 Introduction",
+      "prob": null,
+      "is_author_statement": false,
+      "is_in_expected_section": true
+    },
+    {
       "text": "In this work, our goal is to develop a framework for such AR assistance applicable to an important class of everyday tasksthose involving object rearrangementand to evaluate its value to users at scale.",
       "label": "Objective",
       "bboxes": [
@@ -4478,6 +4602,37 @@
       "is_in_expected_section": false
     },
     {
+      "text": "In the final phase, the participant is given a survey that collects demographic information (e.g., age, gender), responses to the subjective questions described in Sec. 5.3.2, and a free-form response to capture anything else relevant to their experience. ",
+      "label": "Objective",
+      "bboxes": [
+        {
+          "left": 0.16138235294117648,
+          "top": 0.4639419191919192,
+          "width": 0.6602254901960785,
+          "height": 0.011320707070707092,
+          "page": 10
+        },
+        {
+          "left": 0.1200016339869281,
+          "top": 0.48123737373737374,
+          "width": 0.6999901960784313,
+          "height": 0.011320707070707092,
+          "page": 10
+        },
+        {
+          "left": 0.1200016339869281,
+          "top": 0.4985340909090909,
+          "width": 0.11341666666666668,
+          "height": 0.011320707070707037,
+          "page": 10
+        }
+      ],
+      "section": "5 Study setup 5.4 HIT overview",
+      "prob": null,
+      "is_author_statement": false,
+      "is_in_expected_section": false
+    },
+    {
       "text": "We first present and evaluate the hypotheses related to different assistance fidelity in easiest task difficulty condition using objective and subjective metrics defined in Sec. ",
       "label": "Objective",
       "bboxes": [
@@ -4497,6 +4652,40 @@
         }
       ],
       "section": "6 User study",
+      "prob": null,
+      "is_author_statement": true,
+      "is_in_expected_section": false
+    },
+    {
+      "text": "6.1.1 Hypotheses. ",
+      "label": "Objective",
+      "bboxes": [
+        {
+          "left": 0.1200016339869281,
+          "top": 0.7168585858585858,
+          "width": 0.11095261437908498,
+          "height": 0.011320707070707092,
+          "page": 10
+        }
+      ],
+      "section": "",
+      "prob": null,
+      "is_author_statement": false,
+      "is_in_expected_section": false
+    },
+    {
+      "text": "With regards to varying the assistance fidelity, we had the following hypotheses:",
+      "label": "Objective",
+      "bboxes": [
+        {
+          "left": 0.23665032679738565,
+          "top": 0.7168131313131313,
+          "width": 0.4755114379084968,
+          "height": 0.011320707070707092,
+          "page": 10
+        }
+      ],
+      "section": "6 User study 6.1 Effects of varying assistance fidelity",
       "prob": null,
       "is_author_statement": true,
       "is_in_expected_section": false
@@ -4706,6 +4895,30 @@
         }
       ],
       "section": "6 User study 6.2 Interactions between assistance and task difficulty",
+      "prob": null,
+      "is_author_statement": true,
+      "is_in_expected_section": false
+    },
+    {
+      "text": "The full list of Likert-scale questions used in our study is below (a subset was described in Sec. 5.3 and used for analysis in Sec. 6.1):",
+      "label": "Objective",
+      "bboxes": [
+        {
+          "left": 0.17956209150326796,
+          "top": 0.29340025252525254,
+          "width": 0.7004395424836602,
+          "height": 0.011320707070707092,
+          "page": 17
+        },
+        {
+          "left": 0.18000163398692812,
+          "top": 0.3106969696969697,
+          "width": 0.06569444444444444,
+          "height": 0.011320707070707092,
+          "page": 17
+        }
+      ],
+      "section": "D Subjectivemetrics",
       "prob": null,
       "is_author_statement": true,
       "is_in_expected_section": false
@@ -7683,6 +7896,54 @@
   ],
   "2102.04174": [
     {
+      "text": "It contributes to scholarship by combining planning and inference with model-based approaches at the level of individual learners and items. ",
+      "label": "Contribution",
+      "bboxes": [
+        {
+          "left": 0.3621993464052288,
+          "top": 0.74339898989899,
+          "width": 0.5177941176470588,
+          "height": 0.011320707070707092,
+          "page": 1
+        },
+        {
+          "left": 0.18000163398692812,
+          "top": 0.7606957070707071,
+          "width": 0.3247777777777777,
+          "height": 0.011320707070707092,
+          "page": 1
+        }
+      ],
+      "section": "1 INTRODUCTION",
+      "prob": null,
+      "is_author_statement": false,
+      "is_in_expected_section": true
+    },
+    {
+      "text": "In this paper, we propose an approach that builds on the literature described above and draws its contributions together in a single system, with ",
+      "label": "Contribution",
+      "bboxes": [
+        {
+          "left": 0.18000163398692812,
+          "top": 0.2162512626262626,
+          "width": 0.7002810457516339,
+          "height": 0.011320707070707092,
+          "page": 3
+        },
+        {
+          "left": 0.18000163398692812,
+          "top": 0.2335479797979798,
+          "width": 0.14509150326797385,
+          "height": 0.011320707070707092,
+          "page": 3
+        }
+      ],
+      "section": "2 RELATEDWORK 2.3 Our technique",
+      "prob": null,
+      "is_author_statement": true,
+      "is_in_expected_section": false
+    },
+    {
       "text": "The main contribution represented by this paper has less to do with the performance of an end-to-end method than it does with proposing a modular framework that, in contrast to prior methods, clearly advances our tackling of multiple aspects of learning. ",
       "label": "Contribution",
       "bboxes": [
@@ -8419,6 +8680,61 @@
       "is_in_expected_section": true
     },
     {
+      "text": "Intelligent tutoring [2] addresses the problem of designing teaching interventions  any materials, practice, and feedback delivered by a teacher  for education objectives such as learning a new language or skill. ",
+      "label": "Objective",
+      "bboxes": [
+        {
+          "left": 0.18000163398692812,
+          "top": 0.22451136363636362,
+          "width": 0.7003741830065358,
+          "height": 0.01396969696969702,
+          "page": 1
+        },
+        {
+          "left": 0.18000163398692812,
+          "top": 0.2418080808080808,
+          "width": 0.5189248366013072,
+          "height": 0.011320707070707092,
+          "page": 1
+        }
+      ],
+      "section": "1 INTRODUCTION",
+      "prob": null,
+      "is_author_statement": false,
+      "is_in_expected_section": true
+    },
+    {
+      "text": "One of the central challenges for research on intelligent user interfaces is to identify algorithmic principles that can pick the best interventions for reliably improving human learning toward stated objectives in light of realistically obtainable data on the user. ",
+      "label": "Objective",
+      "bboxes": [
+        {
+          "left": 0.18000163398692812,
+          "top": 0.2764002525252525,
+          "width": 0.7000049019607841,
+          "height": 0.011320707070707092,
+          "page": 1
+        },
+        {
+          "left": 0.18000163398692812,
+          "top": 0.2936969696969697,
+          "width": 0.7003807189542484,
+          "height": 0.011320707070707092,
+          "page": 1
+        },
+        {
+          "left": 0.18000163398692812,
+          "top": 0.31099242424242424,
+          "width": 0.16862745098039209,
+          "height": 0.011320707070707037,
+          "page": 1
+        }
+      ],
+      "section": "1 INTRODUCTION",
+      "prob": null,
+      "is_author_statement": false,
+      "is_in_expected_section": true
+    },
+    {
       "text": "The computational problem we study is how, when given some learning materials, we can organize them into lessons and reviews such that, over time, human learning is maximized with respect to a set learning objective.",
       "label": "Objective",
       "bboxes": [
@@ -8469,6 +8785,23 @@
         }
       ],
       "section": "2 RELATEDWORK 2.2 Model-free and model-based learning",
+      "prob": null,
+      "is_author_statement": false,
+      "is_in_expected_section": false
+    },
+    {
+      "text": "Aiming to increase the learners knowledge, the teacher sets learning objectives. ",
+      "label": "Objective",
+      "bboxes": [
+        {
+          "left": 0.196281045751634,
+          "top": 0.5750113636363636,
+          "width": 0.48110620915032687,
+          "height": 0.011320707070707092,
+          "page": 3
+        }
+      ],
+      "section": "3 INDIVIDUALIZED MODEL-BASED PLANNING 3.1 General characterization of the problem",
       "prob": null,
       "is_author_statement": false,
       "is_in_expected_section": false
@@ -8587,6 +8920,37 @@
       "is_in_expected_section": false
     },
     {
+      "text": "There were two (roughly 10-minute) training sessions, with 100 questions each, per day for six days, then two evaluation sessions on the seventh day. ",
+      "label": "Objective",
+      "bboxes": [
+        {
+          "left": 0.6654395424836602,
+          "top": 0.4301893939393939,
+          "width": 0.15493954248366004,
+          "height": 0.011320707070707092,
+          "page": 10
+        },
+        {
+          "left": 0.11966339869281045,
+          "top": 0.4474861111111111,
+          "width": 0.7003382352941177,
+          "height": 0.011320707070707092,
+          "page": 10
+        },
+        {
+          "left": 0.1200016339869281,
+          "top": 0.4647828282828283,
+          "width": 0.02356699346405229,
+          "height": 0.011320707070707092,
+          "page": 10
+        }
+      ],
+      "section": "6 THE USER STUDY 6.1 Methods",
+      "prob": null,
+      "is_author_statement": false,
+      "is_in_expected_section": false
+    },
+    {
       "text": "Each question consisted of the presentation of a kanji and six possible answers (note that the six-responses setting corresponds to not too high a probability of randomly selecting the correct answer while still not overloading the interface).",
       "label": "Objective",
       "bboxes": [
@@ -8616,6 +8980,37 @@
       "prob": null,
       "is_author_statement": false,
       "is_in_expected_section": false
+    },
+    {
+      "text": "Also, extensions are possible for addressing the nature or type of various teaching objectives: focusing on particular classes of words, paying attention to exam dates, attention to quality over quantity, etc. ",
+      "label": "Objective",
+      "bboxes": [
+        {
+          "left": 0.7106454248366013,
+          "top": 0.15585227272727273,
+          "width": 0.169346405228758,
+          "height": 0.011320707070707092,
+          "page": 13
+        },
+        {
+          "left": 0.18000163398692812,
+          "top": 0.17314898989898989,
+          "width": 0.6999934640522876,
+          "height": 0.011320707070707092,
+          "page": 13
+        },
+        {
+          "left": 0.18000163398692812,
+          "top": 0.19044444444444444,
+          "width": 0.31705718954248363,
+          "height": 0.011320707070707092,
+          "page": 13
+        }
+      ],
+      "section": "7 DISCUSSION AND CONCLUSIONS",
+      "prob": null,
+      "is_author_statement": false,
+      "is_in_expected_section": true
     },
     {
       "text": "Previous work on this topic has mainly explored rule-based and model-based approaches (see Related Work). ",

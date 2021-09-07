@@ -1,5 +1,50 @@
 [
   {
+    "text": "In summary, our contributions are: (1) a novel framework for computing and displaying AR assistance for objectrearrangement tasks that employs a hybrid single agent (i.e., the userAR-system) and CVRP formulation, (2) a novel AR simulator that can enable large-scale web-based evaluation of AR-like assistance, and (3) a large-scale web-based study that assesses how users respond to the proposed form of AR assistance in a house-cleaning task over a range of task difficulties. ",
+    "label": "Contribution",
+    "bboxes": [
+      {
+        "left": 0.1362794117647059,
+        "top": 0.5390075757575757,
+        "width": 0.6861993464052287,
+        "height": 0.011320707070707092,
+        "page": 2
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.5563030303030303,
+        "width": 0.6999967320261438,
+        "height": 0.011320707070707092,
+        "page": 2
+      },
+      {
+        "left": 0.11948856209150326,
+        "top": 0.5735997474747475,
+        "width": 0.7005147058823529,
+        "height": 0.011320707070707092,
+        "page": 2
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.5908964646464646,
+        "width": 0.7003807189542484,
+        "height": 0.011320707070707092,
+        "page": 2
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.6081919191919192,
+        "width": 0.06494444444444443,
+        "height": 0.011320707070707092,
+        "page": 2
+      }
+    ],
+    "section": "1 Introduction",
+    "prob": null,
+    "is_author_statement": true,
+    "is_in_expected_section": true
+  },
+  {
     "text": "We envision our second contribution as being useful beyond the domain of AR assistance, as it can provide a framework for at-scale user-in-the-loop evaluation of different kinds of digital assistance. ",
     "label": "Contribution",
     "bboxes": [
@@ -29,6 +74,23 @@
     "prob": null,
     "is_author_statement": true,
     "is_in_expected_section": true
+  },
+  {
+    "text": "We now review related work that relates to our three key contributions. ",
+    "label": "Contribution",
+    "bboxes": [
+      {
+        "left": 0.11929738562091505,
+        "top": 0.7223472222222223,
+        "width": 0.41027941176470584,
+        "height": 0.011320707070707092,
+        "page": 2
+      }
+    ],
+    "section": "2 RelatedWork",
+    "prob": null,
+    "is_author_statement": true,
+    "is_in_expected_section": false
   },
   {
     "text": "However, AR devices hold the promise of providing assistance to users on a much broader and less specialized class of commonly occurring quotidian activities. ",
@@ -831,6 +893,30 @@
     "is_in_expected_section": true
   },
   {
+    "text": "This exposes the exciting potential for such AR devices to provide users with continual, contextually relevant assistance toward achieving their personalized goals. ",
+    "label": "Objective",
+    "bboxes": [
+      {
+        "left": 0.2626388888888889,
+        "top": 0.40010732323232323,
+        "width": 0.6177401960784314,
+        "height": 0.011320707070707092,
+        "page": 1
+      },
+      {
+        "left": 0.18000163398692812,
+        "top": 0.4174027777777778,
+        "width": 0.3623725490196078,
+        "height": 0.011320707070706981,
+        "page": 1
+      }
+    ],
+    "section": "1 Introduction",
+    "prob": null,
+    "is_author_statement": false,
+    "is_in_expected_section": true
+  },
+  {
     "text": "In this work, our goal is to develop a framework for such AR assistance applicable to an important class of everyday tasksthose involving object rearrangementand to evaluate its value to users at scale.",
     "label": "Objective",
     "bboxes": [
@@ -1148,6 +1234,37 @@
     "is_in_expected_section": false
   },
   {
+    "text": "In the final phase, the participant is given a survey that collects demographic information (e.g., age, gender), responses to the subjective questions described in Sec. 5.3.2, and a free-form response to capture anything else relevant to their experience. ",
+    "label": "Objective",
+    "bboxes": [
+      {
+        "left": 0.16138235294117648,
+        "top": 0.4639419191919192,
+        "width": 0.6602254901960785,
+        "height": 0.011320707070707092,
+        "page": 10
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.48123737373737374,
+        "width": 0.6999901960784313,
+        "height": 0.011320707070707092,
+        "page": 10
+      },
+      {
+        "left": 0.1200016339869281,
+        "top": 0.4985340909090909,
+        "width": 0.11341666666666668,
+        "height": 0.011320707070707037,
+        "page": 10
+      }
+    ],
+    "section": "5 Study setup 5.4 HIT overview",
+    "prob": null,
+    "is_author_statement": false,
+    "is_in_expected_section": false
+  },
+  {
     "text": "We first present and evaluate the hypotheses related to different assistance fidelity in easiest task difficulty condition using objective and subjective metrics defined in Sec. ",
     "label": "Objective",
     "bboxes": [
@@ -1167,6 +1284,40 @@
       }
     ],
     "section": "6 User study",
+    "prob": null,
+    "is_author_statement": true,
+    "is_in_expected_section": false
+  },
+  {
+    "text": "6.1.1 Hypotheses. ",
+    "label": "Objective",
+    "bboxes": [
+      {
+        "left": 0.1200016339869281,
+        "top": 0.7168585858585858,
+        "width": 0.11095261437908498,
+        "height": 0.011320707070707092,
+        "page": 10
+      }
+    ],
+    "section": "",
+    "prob": null,
+    "is_author_statement": false,
+    "is_in_expected_section": false
+  },
+  {
+    "text": "With regards to varying the assistance fidelity, we had the following hypotheses:",
+    "label": "Objective",
+    "bboxes": [
+      {
+        "left": 0.23665032679738565,
+        "top": 0.7168131313131313,
+        "width": 0.4755114379084968,
+        "height": 0.011320707070707092,
+        "page": 10
+      }
+    ],
+    "section": "6 User study 6.1 Effects of varying assistance fidelity",
     "prob": null,
     "is_author_statement": true,
     "is_in_expected_section": false
@@ -1376,6 +1527,30 @@
       }
     ],
     "section": "6 User study 6.2 Interactions between assistance and task difficulty",
+    "prob": null,
+    "is_author_statement": true,
+    "is_in_expected_section": false
+  },
+  {
+    "text": "The full list of Likert-scale questions used in our study is below (a subset was described in Sec. 5.3 and used for analysis in Sec. 6.1):",
+    "label": "Objective",
+    "bboxes": [
+      {
+        "left": 0.17956209150326796,
+        "top": 0.29340025252525254,
+        "width": 0.7004395424836602,
+        "height": 0.011320707070707092,
+        "page": 17
+      },
+      {
+        "left": 0.18000163398692812,
+        "top": 0.3106969696969697,
+        "width": 0.06569444444444444,
+        "height": 0.011320707070707092,
+        "page": 17
+      }
+    ],
+    "section": "D Subjectivemetrics",
     "prob": null,
     "is_author_statement": true,
     "is_in_expected_section": false

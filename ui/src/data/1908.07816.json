@@ -996,6 +996,44 @@
     "is_in_expected_section": false
   },
   {
+    "text": "For our purposes we filtered out only those dialogs where more than a half of utterances have non-neutral emotional labels, resulting in 78 emotionally positive dialogs and 14 emotionally negative dialogs. ",
+    "label": "Objective",
+    "bboxes": [
+      {
+        "left": 0.22616993464052287,
+        "top": 0.4146010101010101,
+        "width": 0.25471078431372546,
+        "height": 0.012578282828282883,
+        "page": 6
+      },
+      {
+        "left": 0.08790522875816993,
+        "top": 0.4296957070707071,
+        "width": 0.3925604575163399,
+        "height": 0.012578282828282827,
+        "page": 6
+      },
+      {
+        "left": 0.08790522875816993,
+        "top": 0.44479040404040404,
+        "width": 0.3929754901960784,
+        "height": 0.012578282828282827,
+        "page": 6
+      },
+      {
+        "left": 0.08790522875816993,
+        "top": 0.459885101010101,
+        "width": 0.36512908496732027,
+        "height": 0.012578282828282827,
+        "page": 6
+      }
+    ],
+    "section": "4.3.1 Human evaluation setup",
+    "prob": null,
+    "is_author_statement": true,
+    "is_in_expected_section": false
+  },
+  {
     "text": "On the contrary, HRAN poses a question in reply, contradicting the dialog history.",
     "label": "Objective",
     "bboxes": [
